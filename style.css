@@ -64,6 +64,15 @@ header {
 
 .about article {
  margin-bottom: 30px;
+ transition: 1s;
+}
+
+.about .art2, .about .art4 {
+    transform:translateX(-100vw);
+}
+
+.about .art2.active, .about .art4.active {
+    transform:translateX(0);
 }
 
 /* QUOTES */
