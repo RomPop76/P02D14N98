@@ -14,9 +14,10 @@ html {
  font-family: Oswald, sans-serif;
 }
 
-/* body {
+body {
  overflow-x: hidden
-} */
+}
+
 nav {
  height: 10vh;
  background-color: black;
@@ -68,10 +69,14 @@ header {
 }
 
 .about .art2, .about .art4 {
+    transform:translateX(100vw);
+}
+
+.about .art3 {
     transform:translateX(-100vw);
 }
 
-.about .art2.active, .about .art4.active {
+.about .art2.active, .about .art4.active, .about .art3.active {
     transform:translateX(0);
 }
 
@@ -91,11 +96,20 @@ header {
 
 .quotes article {
  margin-bottom: 60px;
+ transition: 1s;
 }
 
 .quotes img {
  display: block;
  width: 100%;
+}
+
+.quotes article {
+    transform: scale(0);
+}
+
+.quotes article.active {
+    transform: scale(1);
 }
 
 /* Footer */
